@@ -2,7 +2,6 @@ provider "aws" {
   region = "us-east-2"
 }
 
-
 resource "aws_instance" "myawsserver" {
   ami = var.image
   instance_type = "t2.nano"
@@ -11,7 +10,7 @@ resource "aws_instance" "myawsserver" {
     Name = lower (var.name)
     env = upper (var.env)
     owner = upper ("Gagandeep")
-    dept = "Eng"
+    dept = "Testing"
     client = "vodafone"
   }
 }
